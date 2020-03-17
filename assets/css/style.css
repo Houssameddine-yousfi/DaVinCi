@@ -1,0 +1,41 @@
+@import 'reset.css';
+
+.grid-container{
+    margin: .5em;
+    height: 55vh;
+    display: grid ;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas: 
+    "top-left  top-left  top-right";
+    grid-gap: 10px;
+}
+.grid-2nd-row-container{
+    margin: .5em;
+    height: 41vh;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "bot-left  bot-mid bot-right";
+    grid-gap: 10px;
+} 
+.top-left{
+    grid-area: top-left;
+    background-color: #476cb3;
+
+}
+.top-right{
+    grid-area: top-right;
+    background-color: #363030;
+}
+.bot-left{
+    grid-area: bot-left;
+    background-color: #d2d2d2;
+}
+.bot-mid{
+    grid-area: bot-mid;
+    background-color: #484d43;
+}
+.bot-right{
+    grid-area: bot-right;
+    background-color: #6c869e;
+
+}
