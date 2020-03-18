@@ -1,21 +1,68 @@
 @import 'reset.css';
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+.pages{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.page{
+    transition: all 1s ease-out;
+}
+.nav-bar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    height: 40px;
+    width: 100vw;
+    background-color: #eff0f1;
+    list-style-type: none;
+    text-transform: uppercase;
+    border-bottom: #9fa6ad 1px solid;
+}
+.nav-link{
+    padding-left: 5px;
+}
+.nav-link a{
+    display: block;
+    padding: 5px 10px;
+}
+
+a:-webkit-any-link {
+    color: #6a737c;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    border: #e4e6e8 1px solid;
+    color: #3c4146;
+    border-radius: 15px;
+    background-color: #e4e6e8;
+}
+
 
 .grid-container{
-    margin: .5em;
-    height: 55vh;
+    width: 100vw;
+    height: 54vh;
     display: grid ;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-areas: 
     "top-left  top-left  top-right";
-    grid-gap: 10px;
+    grid-column-gap: 5px;
 }
 .grid-2nd-row-container{
-    margin: .5em;
-    height: 41vh;
+    width: 100vw;
+    height: 40vh;
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "bot-left  bot-mid bot-right";
-    grid-gap: 10px;
+    grid-column-gap: 5px;
 } 
 .top-left{
     grid-area: top-left;
@@ -38,5 +85,4 @@
 .bot-right{
     grid-area: bot-right;
     background-color: #6c869e;
-
 }

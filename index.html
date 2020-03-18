@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,22 +21,70 @@
     <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
 </head>
+
 <body>
-<div class="grid-container">
-    <section class="top-left">
-        <div id="container" style="min-width: 310px"></div>
-    </section>
-    <section class="top-right">top-right</section>
-</div>
-<div class="grid-2nd-row-container">
-    <section class="bot-left">
-        <figure class="highcharts-figure">
-            <div id="pie_chart_total"></div>
-        </figure>
-    </section>
-    <section class="bot-mid">bot-mid</section>
-    <section class="bot-right">bot-right</section>
-</div>
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-link"><a href="#" class="btnPage1">page1</a></li>
+            <li class="nav-link"><a href="#" class="btnPage2">page2</a></li>
+            <li class="nav-link"><a href="#" class="btnPage3">page3</a></li>
+        </ul>
+    </nav>
+    <div class="pages">
+        <div class="page" id="page1">
+            <div class="grid-container">
+                <section class="top-left">
+                    <div id="container" style="min-width: 310px"></div>
+                </section>
+                <section class="top-right">top-right</section>
+            </div>
+            <div class="grid-2nd-row-container">
+                <section class="bot-left">
+                    <figure class="highcharts-figure">
+                        <div id="pie_chart_total"></div>
+                    </figure>
+                </section>
+                <section class="bot-mid">bot-mid</section>
+                <section class="bot-right">bot-right</section>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <div class="grid-container">
+                <section class="top-left">
+                    <div id="container" style="min-width: 310px"></div>
+                </section>
+                <section class="top-right">top-right</section>
+            </div>
+            <div class="grid-2nd-row-container">
+                <section class="bot-left">
+                    <figure class="highcharts-figure">
+                        <div id="pie_chart_total"></div>
+                    </figure>
+                </section>
+                <section class="bot-mid">bot-mid</section>
+                <section class="bot-right">bot-right</section>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="grid-container">
+                <section class="top-left">
+                    <div id="container" style="min-width: 310px"></div>
+                </section>
+                <section class="top-right">top-right</section>
+            </div>
+            <div class="grid-2nd-row-container">
+                <section class="bot-left">
+                    <figure class="highcharts-figure">
+                        <div id="pie_chart_total"></div>
+                    </figure>
+                </section>
+                <section class="bot-mid">bot-mid</section>
+                <section class="bot-right">bot-right</section>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
 <script src="assets/js/plot.js"></script>
