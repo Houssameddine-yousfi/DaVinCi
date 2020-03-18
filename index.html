@@ -6,20 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
+
+    <!-- highcharts css -->
+    <link rel="stylesheet" href="assets/css/highstyles.css">
+
+    <!-- highcharts js files from net-->
+    <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
+    <!-- highstock js files from net-->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
 </head>
 <body>
 <div class="grid-container">
     <section class="top-left">
-            top-left
+        <div id="container" style="min-width: 310px"></div>
     </section>
     <section class="top-right">top-right</section>
 </div>
 <div class="grid-2nd-row-container">
-    <section class="bot-left">bot-lef</section>
+    <section class="bot-left">
+        <figure class="highcharts-figure">
+            <div id="pie_chart_total"></div>
+        </figure>
+    </section>
     <section class="bot-mid">bot-mid</section>
     <section class="bot-right">bot-right</section>
 </div>
-    
-    
 </body>
 </html>
+<script src="assets/js/plot.js"></script>

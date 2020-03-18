@@ -29,6 +29,7 @@
 .bot-left{
     grid-area: bot-left;
     background-color: #d2d2d2;
+    padding: 0px;
 }
 .bot-mid{
     grid-area: bot-mid;
