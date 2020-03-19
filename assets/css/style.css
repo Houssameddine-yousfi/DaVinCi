@@ -11,18 +11,18 @@ html {
     overflow: hidden;
 }
 .page{
-    transition: all 1s ease-out;
+    transition: all 300ms ease-out;
 }
 .nav-bar{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 20px;
-    height: 40px;
+    font-size: 15px;
+    height: 28px;
     width: 100vw;
     background-color: #eff0f1;
     list-style-type: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-bottom: #9fa6ad 1px solid;
 }
 .nav-link{
@@ -30,10 +30,16 @@ html {
 }
 .nav-link a{
     display: block;
-    padding: 5px 10px;
+    padding: 4px 8px;
 }
 
 a:-webkit-any-link {
+    color: #6a737c;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+a {
     color: #6a737c;
     cursor: pointer;
     text-decoration: none;
@@ -46,19 +52,25 @@ a:hover{
     background-color: #e4e6e8;
 }
 
+a:focus{
+    outline: none;
+}
+
 
 .grid-container{
-    width: 100vw;
-    height: 54vh;
+    width: 99.9vw;
+    height: 53.2vh;
     display: grid ;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-areas: 
     "top-left  top-left  top-right";
     grid-column-gap: 5px;
+    margin-bottom: 5px;
+    margin-top: 1px;
 }
 .grid-2nd-row-container{
-    width: 100vw;
-    height: 40vh;
+    width: 99.9vw;
+    height: 41.5vh;
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "bot-left  bot-mid bot-right";
@@ -66,7 +78,7 @@ a:hover{
 } 
 .top-left{
     grid-area: top-left;
-    background-color: #476cb3;
+    background-color: lightblue;
 
 }
 .top-right{
@@ -75,8 +87,6 @@ a:hover{
 }
 .bot-left{
     grid-area: bot-left;
-    background-color: #d2d2d2;
-    padding: 0px;
 }
 .bot-mid{
     grid-area: bot-mid;
@@ -85,4 +95,26 @@ a:hover{
 .bot-right{
     grid-area: bot-right;
     background-color: #6c869e;
+}
+
+.page2__grid-container{
+    width: 100vw;
+    height: 94.7vh;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "page2-left  page2-right";
+    grid-column-gap: 5px;
+    margin-left: 5px;
+}
+
+.page2__left{
+    grid-area: page2-left;
+    background-color: khaki;
+    text-align: center;
+}
+
+.page2__right{
+    grid-area: page2-right;
+    background-color: lavenderblush;
+    text-align: center;
 }
