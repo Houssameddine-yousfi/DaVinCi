@@ -1,0 +1,827 @@
+[
+{
+"value": 1185274,
+"code": "01",
+"name": "Ain"
+},
+{
+"value": 608416,
+"code": "02",
+"name": "Aisne"
+},
+{
+"value": 685615,
+"code": "03",
+"name": "Allier"
+},
+{
+"value": 312591,
+"code": "04",
+"name": "Alpes-de-Haute-Provence"
+},
+{
+"value": 262162,
+"code": "05",
+"name": "Hautes-Alpes"
+},
+{
+"value": 1553068,
+"code": "06",
+"name": "Alpes-Maritimes"
+},
+{
+"value": 674119,
+"code": "07",
+"name": "Ardèche"
+},
+{
+"value": 327019,
+"code": "08",
+"name": "Ardennes"
+},
+{
+"value": 414753,
+"code": "10",
+"name": "Aube"
+},
+{
+"value": 4100682,
+"code": "13",
+"name": "Bouches-du-Rhône"
+},
+{
+"value": 928681,
+"code": "14",
+"name": "Calvados"
+},
+{
+"value": 425641,
+"code": "15",
+"name": "Cantal"
+},
+{
+"value": 646658,
+"code": "16",
+"name": "Charente"
+},
+{
+"value": 1189051,
+"code": "17",
+"name": "Charente-Maritime"
+},
+{
+"value": 566252,
+"code": "18",
+"name": "Cher"
+},
+{
+"value": 693132,
+"code": "19",
+"name": "Corrèze"
+},
+{
+"value": 906274,
+"code": "21",
+"name": "Côte-d'or"
+},
+{
+"value": 810488,
+"code": "22",
+"name": "Côtes-d'armor"
+},
+{
+"value": 217227,
+"code": "23",
+"name": "Creuse"
+},
+{
+"value": 922875,
+"code": "24",
+"name": "Dordogne"
+},
+{
+"value": 824428,
+"code": "25",
+"name": "Doubs"
+},
+{
+"value": 1058941,
+"code": "26",
+"name": "Drôme"
+},
+{
+"value": 918051,
+"code": "27",
+"name": "Eure"
+},
+{
+"value": 672275,
+"code": "28",
+"name": "Eure-et-Loir"
+},
+{
+"value": 1177381,
+"code": "29",
+"name": "Finistère"
+},
+{
+"value": 330591,
+"code": "2A",
+"name": "Corse-du-sud"
+},
+{
+"value": 4276379,
+"code": "33",
+"name": "Gironde"
+},
+{
+"value": 1532756,
+"code": "35",
+"name": "Ile-et-Vilaine"
+},
+{
+"value": 358887,
+"code": "36",
+"name": "Indre"
+},
+{
+"value": 902443,
+"code": "37",
+"name": "Indre-et-Loire"
+},
+{
+"value": 2946022,
+"code": "38",
+"name": "Isère"
+},
+{
+"value": 390251,
+"code": "39",
+"name": "Jura"
+},
+{
+"value": 983320,
+"code": "40",
+"name": "Landes"
+},
+{
+"value": 545824,
+"code": "41",
+"name": "Loir-et-Cher"
+},
+{
+"value": 1749606,
+"code": "42",
+"name": "Loire"
+},
+{
+"value": 576254,
+"code": "43",
+"name": "Haute-Loire"
+},
+{
+"value": 2448833,
+"code": "44",
+"name": "Loire-Atlantique"
+},
+{
+"value": 1216651,
+"code": "45",
+"name": "Loiret"
+},
+{
+"value": 1066307,
+"code": "47",
+"name": "Lot-et-Garonne"
+},
+{
+"value": 1328316,
+"code": "49",
+"name": "Maine-et-Loire"
+},
+{
+"value": 592074,
+"code": "50",
+"name": "Manche"
+},
+{
+"value": 818707,
+"code": "51",
+"name": "Marne"
+},
+{
+"value": 237994,
+"code": "52",
+"name": "Haute-Marne"
+},
+{
+"value": 441094,
+"code": "53",
+"name": "Mayenne"
+},
+{
+"value": 1116371,
+"code": "54",
+"name": "Meurthe-et-Moselle"
+},
+{
+"value": 249150,
+"code": "55",
+"name": "Meuse"
+},
+{
+"value": 1123680,
+"code": "56",
+"name": "Morbihan"
+},
+{
+"value": 1210033,
+"code": "57",
+"name": "Moselle"
+},
+{
+"value": 350308,
+"code": "58",
+"name": "Nièvre"
+},
+{
+"value": 3486515,
+"code": "59",
+"name": "Nord"
+},
+{
+"value": 1149107,
+"code": "60",
+"name": "Oise"
+},
+{
+"value": 415923,
+"code": "61",
+"name": "Orne"
+},
+{
+"value": 1694985,
+"code": "62",
+"name": "Pas-de-Calais"
+},
+{
+"value": 1929595,
+"code": "63",
+"name": "Puy-de-Dôme"
+},
+{
+"value": 1475114,
+"code": "64",
+"name": "Pyrénées-Atlantiques"
+},
+{
+"value": 1129738,
+"code": "67",
+"name": "Bas-Rhin"
+},
+{
+"value": 758442,
+"code": "68",
+"name": "Haut-Rhin"
+},
+{
+"value": 4141822,
+"code": "69",
+"name": "Rhône"
+},
+{
+"value": 327970,
+"code": "70",
+"name": "Haute-Saône"
+},
+{
+"value": 917453,
+"code": "71",
+"name": "Saône-et-Loire"
+},
+{
+"value": 884640,
+"code": "72",
+"name": "Sarthe"
+},
+{
+"value": 823750,
+"code": "73",
+"name": "Savoie"
+},
+{
+"value": 1302280,
+"code": "74",
+"name": "Haute-Savoie"
+},
+{
+"value": 4575679,
+"code": "75",
+"name": "Paris"
+},
+{
+"value": 1795063,
+"code": "76",
+"name": "Seine-Maritime"
+},
+{
+"value": 2565048,
+"code": "77",
+"name": "Seine-et-Marne"
+},
+{
+"value": 2597637,
+"code": "78",
+"name": "Yvelines"
+},
+{
+"value": 636069,
+"code": "79",
+"name": "Deux-Sèvres"
+},
+{
+"value": 663232,
+"code": "80",
+"name": "Somme"
+},
+{
+"value": 1707641,
+"code": "83",
+"name": "Var"
+},
+{
+"value": 1179876,
+"code": "84",
+"name": "Vaucluse"
+},
+{
+"value": 1296360,
+"code": "85",
+"name": "Vendée"
+},
+{
+"value": 755520,
+"code": "86",
+"name": "Vienne"
+},
+{
+"value": 841867,
+"code": "87",
+"name": "Haute-Vienne"
+},
+{
+"value": 449939,
+"code": "88",
+"name": "Vosges"
+},
+{
+"value": 532141,
+"code": "89",
+"name": "Yonne"
+},
+{
+"value": 187041,
+"code": "90",
+"name": "Territoire de Belfort"
+},
+{
+"value": 2551076,
+"code": "91",
+"name": "Essonne"
+},
+{
+"value": 3059305,
+"code": "92",
+"name": "Hauts-de-Seine"
+},
+{
+"value": 2810910,
+"code": "93",
+"name": "Seine-Saint-Denis"
+},
+{
+"value": 2680112,
+"code": "94",
+"name": "Val-de-Marne"
+},
+{
+"value": 2106720,
+"code": "95",
+"name": "Val-d'oise"
+},
+{
+"value": 1185274,
+"code": "01",
+"name": "Ain"
+},
+{
+"value": 608416,
+"code": "02",
+"name": "Aisne"
+},
+{
+"value": 685615,
+"code": "03",
+"name": "Allier"
+},
+{
+"value": 312591,
+"code": "04",
+"name": "Alpes-de-Haute-Provence"
+},
+{
+"value": 262162,
+"code": "05",
+"name": "Hautes-Alpes"
+},
+{
+"value": 1553068,
+"code": "06",
+"name": "Alpes-Maritimes"
+},
+{
+"value": 674119,
+"code": "07",
+"name": "Ardèche"
+},
+{
+"value": 327019,
+"code": "08",
+"name": "Ardennes"
+},
+{
+"value": 414753,
+"code": "10",
+"name": "Aube"
+},
+{
+"value": 4100682,
+"code": "13",
+"name": "Bouches-du-Rhône"
+},
+{
+"value": 928681,
+"code": "14",
+"name": "Calvados"
+},
+{
+"value": 425641,
+"code": "15",
+"name": "Cantal"
+},
+{
+"value": 646658,
+"code": "16",
+"name": "Charente"
+},
+{
+"value": 1189051,
+"code": "17",
+"name": "Charente-Maritime"
+},
+{
+"value": 566252,
+"code": "18",
+"name": "Cher"
+},
+{
+"value": 693132,
+"code": "19",
+"name": "Corrèze"
+},
+{
+"value": 906274,
+"code": "21",
+"name": "Côte-d'or"
+},
+{
+"value": 810488,
+"code": "22",
+"name": "Côtes-d'armor"
+},
+{
+"value": 217227,
+"code": "23",
+"name": "Creuse"
+},
+{
+"value": 922875,
+"code": "24",
+"name": "Dordogne"
+},
+{
+"value": 824428,
+"code": "25",
+"name": "Doubs"
+},
+{
+"value": 1058941,
+"code": "26",
+"name": "Drôme"
+},
+{
+"value": 918051,
+"code": "27",
+"name": "Eure"
+},
+{
+"value": 672275,
+"code": "28",
+"name": "Eure-et-Loir"
+},
+{
+"value": 1177381,
+"code": "29",
+"name": "Finistère"
+},
+{
+"value": 330591,
+"code": "2A",
+"name": "Corse-du-sud"
+},
+{
+"value": 4276379,
+"code": "33",
+"name": "Gironde"
+},
+{
+"value": 1532756,
+"code": "35",
+"name": "Ile-et-Vilaine"
+},
+{
+"value": 358887,
+"code": "36",
+"name": "Indre"
+},
+{
+"value": 902443,
+"code": "37",
+"name": "Indre-et-Loire"
+},
+{
+"value": 2946022,
+"code": "38",
+"name": "Isère"
+},
+{
+"value": 390251,
+"code": "39",
+"name": "Jura"
+},
+{
+"value": 983320,
+"code": "40",
+"name": "Landes"
+},
+{
+"value": 545824,
+"code": "41",
+"name": "Loir-et-Cher"
+},
+{
+"value": 1749606,
+"code": "42",
+"name": "Loire"
+},
+{
+"value": 576254,
+"code": "43",
+"name": "Haute-Loire"
+},
+{
+"value": 2448833,
+"code": "44",
+"name": "Loire-Atlantique"
+},
+{
+"value": 1216651,
+"code": "45",
+"name": "Loiret"
+},
+{
+"value": 1066307,
+"code": "47",
+"name": "Lot-et-Garonne"
+},
+{
+"value": 337980,
+"code": "48",
+"name": "Lozère"
+},
+{
+"value": 1328316,
+"code": "49",
+"name": "Maine-et-Loire"
+},
+{
+"value": 592074,
+"code": "50",
+"name": "Manche"
+},
+{
+"value": 818707,
+"code": "51",
+"name": "Marne"
+},
+{
+"value": 237994,
+"code": "52",
+"name": "Haute-Marne"
+},
+{
+"value": 441094,
+"code": "53",
+"name": "Mayenne"
+},
+{
+"value": 1116371,
+"code": "54",
+"name": "Meurthe-et-Moselle"
+},
+{
+"value": 249150,
+"code": "55",
+"name": "Meuse"
+},
+{
+"value": 1123680,
+"code": "56",
+"name": "Morbihan"
+},
+{
+"value": 1210033,
+"code": "57",
+"name": "Moselle"
+},
+{
+"value": 350308,
+"code": "58",
+"name": "Nièvre"
+},
+{
+"value": 3486515,
+"code": "59",
+"name": "Nord"
+},
+{
+"value": 1149107,
+"code": "60",
+"name": "Oise"
+},
+{
+"value": 415923,
+"code": "61",
+"name": "Orne"
+},
+{
+"value": 1694985,
+"code": "62",
+"name": "Pas-de-Calais"
+},
+{
+"value": 1929595,
+"code": "63",
+"name": "Puy-de-Dôme"
+},
+{
+"value": 1475114,
+"code": "64",
+"name": "Pyrénées-Atlantiques"
+},
+{
+"value": 1129738,
+"code": "67",
+"name": "Bas-Rhin"
+},
+{
+"value": 758442,
+"code": "68",
+"name": "Haut-Rhin"
+},
+{
+"value": 4141822,
+"code": "69",
+"name": "Rhône"
+},
+{
+"value": 327970,
+"code": "70",
+"name": "Haute-Saône"
+},
+{
+"value": 917453,
+"code": "71",
+"name": "Saône-et-Loire"
+},
+{
+"value": 884640,
+"code": "72",
+"name": "Sarthe"
+},
+{
+"value": 823750,
+"code": "73",
+"name": "Savoie"
+},
+{
+"value": 1302280,
+"code": "74",
+"name": "Haute-Savoie"
+},
+{
+"value": 4575679,
+"code": "75",
+"name": "Paris"
+},
+{
+"value": 1795063,
+"code": "76",
+"name": "Seine-Maritime"
+},
+{
+"value": 2565048,
+"code": "77",
+"name": "Seine-et-Marne"
+},
+{
+"value": 2597637,
+"code": "78",
+"name": "Yvelines"
+},
+{
+"value": 636069,
+"code": "79",
+"name": "Deux-Sèvres"
+},
+{
+"value": 663232,
+"code": "80",
+"name": "Somme"
+},
+{
+"value": 1707641,
+"code": "83",
+"name": "Var"
+},
+{
+"value": 1179876,
+"code": "84",
+"name": "Vaucluse"
+},
+{
+"value": 1296360,
+"code": "85",
+"name": "Vendée"
+},
+{
+"value": 755520,
+"code": "86",
+"name": "Vienne"
+},
+{
+"value": 841867,
+"code": "87",
+"name": "Haute-Vienne"
+},
+{
+"value": 449939,
+"code": "88",
+"name": "Vosges"
+},
+{
+"value": 532141,
+"code": "89",
+"name": "Yonne"
+},
+{
+"value": 187041,
+"code": "90",
+"name": "Territoire de Belfort"
+},
+{
+"value": 2551076,
+"code": "91",
+"name": "Essonne"
+},
+{
+"value": 3059305,
+"code": "92",
+"name": "Hauts-de-Seine"
+},
+{
+"value": 2810910,
+"code": "93",
+"name": "Seine-Saint-Denis"
+},
+{
+"value": 2680112,
+"code": "94",
+"name": "Val-de-Marne"
+},
+{
+"value": 2106720,
+"code": "95",
+"name": "Val-d'oise"
+}
+]
