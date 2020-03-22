@@ -167,8 +167,8 @@ Highcharts.chart('pareto', {
 
 var seriesOptions = [],
     seriesCounter = 0,
-    datasets = ["dpt_09", "dpt_11", "dpt_12","dpt_30", "dpt_31", "dpt_32", "dpt_34","dpt_46","dpt_48","dpt_65","dpt_66","dpt_81","dpt_32"],
-    names = ["dpt_09", "dpt_11", "dpt_12","dpt_30", "dpt_31", "dpt_32", "dpt_34","dpt_46","dpt_48","dpt_65","dpt_66","dpt_81","dpt_32"];
+    datasets = ["dpt_09",  "dpt_12","dpt_30", "dpt_34"],
+    names = ["dpt_09",  "dpt_12","dpt_30", "dpt_34"];
 
 /**
  * Create the chart when all data is loaded
@@ -183,10 +183,29 @@ function createChart() {
         title: {
             text: 'Nombre de nuitées par departement'
         },
+        
         rangeSelector: {
-            selected: 4
+            allButtonsEnabled: true,
+            buttons: [{
+                type: 'month',
+                count: 3,
+                text: '3m',
+                dataGrouping: {
+                    forced: true,
+                    units: [['day', [1]]]
+                }
+            }, , {
+                type: 'all',
+                text: 'all',
+                dataGrouping: {
+                    forced: true,
+                    units: [['day', [1]]]
+                }
+            }],
+            
+            selected: 2
         },
-
+        
         yAxis: {
             labels: {
                 formatter: function () {
