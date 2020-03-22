@@ -2,7 +2,8 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-  }
+    background-color: #616161;
+}
 
 .pages{
     display: flex;
@@ -20,10 +21,9 @@ html {
     font-size: 15px;
     height: 28px;
     width: 100vw;
-    background-color: #eff0f1;
+    background-color: #383838;
     list-style-type: none;
     text-transform: capitalize;
-    border-bottom: #9fa6ad 1px solid;
 }
 .nav-link{
     padding-left: 5px;
@@ -40,39 +40,38 @@ a:-webkit-any-link {
     outline: none;
 }
 a {
-    color: #6a737c;
+    color: #fff ;
     cursor: pointer;
     text-decoration: none;
     outline: none;
+    opacity: .6;
+    transition: opacity 100ms ease-in;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
 }
 a:hover{
-    border: #e4e6e8 1px solid;
-    color: #3c4146;
-    border-radius: 15px;
-    background-color: #e4e6e8;
+    opacity: 1;
+}
+a.active{
+    opacity: 1;
 }
 
 a:focus{
     outline: none;
 }
-
-
 .grid-container{
     width: 99.9vw;
-    height: 94.7vh;
+    height: 95.9vh;
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "top-left  top-left  top-right"
     "bot-left  bot-mid    top-right";
-    grid-column-gap: 5px;
-    margin-bottom: 5px;
-    margin-top: 1px;
+    grid-gap: 3px;
 }
 .top-left{
     grid-area: top-left;
-    background-color: lightblue;
 
 }
 .top-right{
@@ -84,37 +83,29 @@ a:focus{
 }
 .bot-mid{
     grid-area: bot-mid;
-    background-color: #484d43;
 }
 
 .page2__grid-container{
     width: 100vw;
-    height: 94.7vh;
+    height: 95.9vh;
     display: grid ;
-    grid-template-columns: 1fr 1.3fr 1fr;
+    grid-template-columns: 1fr 1fr 1.3fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "page2-left  page2-top   page2-right"
     "page2-left  page2-bot page2-right";
-    grid-column-gap: 5px;
-    margin-left: 5px;
+    grid-gap: 3px;
 }
 
 .page2__top{
     grid-area: page2-top;
-    background-color: khaki;
-    text-align: center;
 }
 
 .page2__bot{
     grid-area: page2-bot;
-    background-color: lavenderblush;
-    text-align: center;
 }
 .page2__left{
     grid-area: page2-left;
-    background-color: khaki;
-    text-align: center;
 }
 
 .page2__right{

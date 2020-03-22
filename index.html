@@ -10,6 +10,7 @@
 
     <!-- highcharts css -->
     <link rel="stylesheet" href="assets/css/highstyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
 
     <!-- highcharts js files from net-->
     <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
@@ -37,9 +38,9 @@
 <body>
     <nav>
         <ul class="nav-bar">
-            <li class="nav-link"><a href="#" class="btnPage1">page1</a></li>
-            <li class="nav-link"><a href="#" class="btnPage2">page2</a></li>
-            <li class="nav-link"><a href="#" class="btnPage3">page3</a></li>
+            <li class="nav-link"><a href="#" class="btnPage1 active">Volume de tourismes</a></li>
+            <li class="nav-link"><a href="#" class="btnPage2">Flux de touristes</a></li>
+            <li class="nav-link"><a href="#" class="btnPage3">Conditions & motifs</a></li>
         </ul>
     </nav>
     <div class="pages">
@@ -48,7 +49,7 @@
                 <section class="top-left">
                     <div id="container" style="min-width: 310px"></div>
                 </section>
-                <section class="top-right">top-right</section>
+                <section class="top-right"></section>
                 <section class="bot-left">
                     <figure class="highcharts-figure">
                         <div id="pie_chart_total"></div>
@@ -72,6 +73,7 @@
                 <div class="page2__left">
                     <div id="map_france"></div>
                 </div>
+
                 <div class="page2__right">
                     <figure class="highcharts-figure">
                         <figure class="highcharts-figure">
