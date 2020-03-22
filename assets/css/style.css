@@ -163,9 +163,8 @@ h2{
 
 .team{
     opacity: 1;
-    float: left;
     transition: opacity 150ms ease-in;
-    
+    display: block;
 }
 
 .team:hover{

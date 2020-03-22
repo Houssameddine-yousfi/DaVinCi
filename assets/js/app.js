@@ -38,11 +38,11 @@ function remove() {
 about.addEventListener('click', () =>{
     Swal.fire({
         icon: 'info',
-        title: 'Voir Les profiles sur Linkedin',
+        title: 'Voir les profiles sur Linkedin',
         text: 'ceci est un text',
-        html:   '<a class="team" href="https://www.linkedin.com/in/houssam-eddine-yousfi/" target="_blank">- Houssam eddine YOUSFI</a><br>'+ 
-                '<a class="team" href="https://www.linkedin.com/in/reda-mekhezzem/" target="_blank">- Reda MEKHEZZEM</a><br>'+
-                '<a class="team" href="https://www.linkedin.com/in/ishaq-zouaghi-645316131/" target="_blank">- Ishaq ZOUAGHI</a><br>'+
-                '<a class="team" href="https://www.linkedin.com/in/ibrahim-dellal-809222119/" target="_blank">- Ibrahim DELLAL</a><br>'
+        html:   '<a class="team" href="https://www.linkedin.com/in/houssam-eddine-yousfi/" target="_blank">Houssameddine YOUSFI</a><br>'+ 
+                '<a class="team" href="https://www.linkedin.com/in/reda-mekhezzem/" target="_blank">Reda MEKHEZZEM</a><br>'+
+                '<a class="team" href="https://www.linkedin.com/in/ishaq-zouaghi-645316131/" target="_blank">Ishaq ZOUAGHI</a><br>'+
+                '<a class="team" href="https://www.linkedin.com/in/ibrahim-dellal-809222119/" target="_blank">Ibrahim DELLAL</a><br>'
       })
 });
