@@ -1376,7 +1376,7 @@ Highcharts.chart('stacked', {
         type: 'column'
     },
     title: {
-        text: 'Motife de visite'
+        text: 'Motifs de visite'
     },
     xAxis: {
         categories:[
