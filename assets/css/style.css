@@ -59,23 +59,17 @@ a:focus{
 
 .grid-container{
     width: 99.9vw;
-    height: 53.2vh;
+    height: 94.7vh;
     display: grid ;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "top-left  top-left  top-right";
+    "top-left  top-left  top-right"
+    "bot-left  bot-mid    top-right";
     grid-column-gap: 5px;
     margin-bottom: 5px;
     margin-top: 1px;
 }
-.grid-2nd-row-container{
-    width: 99.9vw;
-    height: 41.5vh;
-    display: grid ;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "bot-left  bot-mid bot-right";
-    grid-column-gap: 5px;
-} 
 .top-left{
     grid-area: top-left;
     background-color: lightblue;
@@ -92,21 +86,31 @@ a:focus{
     grid-area: bot-mid;
     background-color: #484d43;
 }
-.bot-right{
-    grid-area: bot-right;
-    background-color: #6c869e;
-}
 
 .page2__grid-container{
     width: 100vw;
     height: 94.7vh;
     display: grid ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "page2-left  page2-right";
+    grid-template-columns: 1fr 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "page2-left  page2-top   page2-right"
+    "page2-left  page2-bot page2-right";
     grid-column-gap: 5px;
     margin-left: 5px;
 }
 
+.page2__top{
+    grid-area: page2-top;
+    background-color: khaki;
+    text-align: center;
+}
+
+.page2__bot{
+    grid-area: page2-bot;
+    background-color: lavenderblush;
+    text-align: center;
+}
 .page2__left{
     grid-area: page2-left;
     background-color: khaki;
@@ -115,6 +119,5 @@ a:focus{
 
 .page2__right{
     grid-area: page2-right;
-    background-color: lavenderblush;
     text-align: center;
 }
