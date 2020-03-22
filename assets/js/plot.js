@@ -354,19 +354,23 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
         },
 
         mapNavigation: {
-            enabled: true
+            enabled: true,
+            backgroundColor: 'rgba(0,0,0,0)'
+        },
+        legend: {           
+            backgroundColor: 'rgba(0,0,0,0)',
         },
 
         colorAxis: {
             min: 100000,
             max: 5000000,
             type: 'logarithmic',
-            minColor: '#EEEEFF',
-            maxColor: '#000022',
+            minColor: 'rgb(255,80,80)',
+            maxColor: 'rgba(0,0,0,0)',
             stops: [
-                [0, '#EFEFFF'],
-                [0.6, '#4444FF'],
-                [1, '#000022']
+                [0, 'rgba(255,80,80,1)'],
+                [0.5, 'rgba(150,40,40,.8)'],
+                [1, 'rgba(20,10,10,.2)']
             ]
         },
 
@@ -465,8 +469,8 @@ Highcharts.chart('scatter_chart', {
         },
         enableMouseTracking: false
     },{
-        name: 'Female',
-        color: 'rgba(223, 83, 83, .5)',
+        name: 'Temprature',
+        color: Highcharts.getOptions().colors[2],
         data: [
             [2.0, 0.08913181990068114],
             [3.0, 0.0731020623140232],
@@ -936,8 +940,8 @@ Highcharts.chart('heat_map', {
         height: document.getElementsByClassName("bot-left")[0].offsetHeight,
         type: 'heatmap',
         marginTop: 40,
-        marginBottom: 80,
-        plotBorderWidth: 1
+        marginBottom: 80
+        // plotBorderWidth: 1
     },
 
 
@@ -969,15 +973,16 @@ Highcharts.chart('heat_map', {
 
     colorAxis: {
         min: -1.5,
-        minColor: '#FFFFFF',
-        maxColor: Highcharts.getOptions().colors[8]
+        minColor: 'rgba(0,0,0,0)',
+        maxColor: 'rgb(255,80,80)'
     },
 
     legend: {
         align: 'right',
         layout: 'vertical',
         margin: 0,
-        verticalAlign: 'top'
+        verticalAlign: 'top',
+        backgroundColor: 'rgba(0,0,0,0)',
         //y: 25,
         //symbolHeight: 280
     },
@@ -1070,17 +1075,200 @@ Highcharts.chart('heat_map', {
         rules: [{
             condition: {
                 maxWidth: 500
-            },
-            chartOptions: {
-                yAxis: {
-                    labels: {
-                        formatter: function () {
-                            return this.value.charAt(0);
-                        }
-                    }
-                }
             }
         }]
     }
+
+});
+
+Highcharts.chart('dependancy', {
+    chart: {
+        height: document.getElementsByClassName("bot-left")[0].offsetHeight
+    },
+    title: {
+        text: 'Highcharts Dependency Wheel'
+    },
+
+    accessibility: {
+        point: {
+            valueDescriptionFormat: '{index}. From {point.from} to {point.to}: {point.weight}.'
+        }
+    },
+
+    series: [{
+        keys: ['from', 'to', 'weight'],
+        data: [
+            ["Haute-Garonne (31)", "Pyrénées-Orientales (66)", 1450651],
+            ["Haute-Garonne (31)", "Hérault (34)", 1314915],
+            ["Haute-Garonne (31)", "Gard (30)", 286204],
+            ["Haute-Garonne (31)", "Aveyron (12)", 508557],
+            ["Haute-Garonne (31)", "Hautes-Pyrénées (65)", 78906],
+            ["Haute-Garonne (31)", "Lot (46)", 455396],
+            ["Haute-Garonne (31)", "Aude (11)", 78190],
+            ["Haute-Garonne (31)", "Ariège (9)", 90038],
+            ["Haute-Garonne (31)", "Gers (32)", 58900],
+            ["Haute-Garonne (31)", "Tarn (81)", 81545],
+            ["Haute-Garonne (31)", "Tarn-et-Garonne (82)", 49702],
+            ["Haute-Garonne (31)", "Lozère (48)", 79700],
+            ["Hérault (34)", "Pyrénées-Orientales (66)", 958459],
+            ["Hérault (34)", "Haute-Garonne (31)", 599542],
+            ["Hérault (34)", "Gard (30)", 124907],
+            ["Hérault (34)", "Aveyron (12)", 39418],
+            ["Hérault (34)", "Hautes-Pyrénées (65)", 155715],
+            ["Hérault (34)", "Lot (46)", 117973],
+            ["Hérault (34)", "Aude (11)", 66610],
+            ["Hérault (34)", "Ariège (9)", 182702],
+            ["Hérault (34)", "Gers (32)", 104272],
+            ["Hérault (34)", "Tarn (81)", 31246],
+            ["Hérault (34)", "Tarn-et-Garonne (82)", 100435],
+            ["Hérault (34)", "Lozère (48)", 26215],
+            ["Pyrénées-Orientales (66)", "Hérault (34)", 424902],
+            ["Pyrénées-Orientales (66)", "Haute-Garonne (31)", 351775],
+            ["Pyrénées-Orientales (66)", "Gard (30)", 127373],
+            ["Pyrénées-Orientales (66)", "Aveyron (12)", 64127],
+            ["Pyrénées-Orientales (66)", "Hautes-Pyrénées (65)", 59032],
+            ["Pyrénées-Orientales (66)", "Lot (46)", 42226],
+            ["Pyrénées-Orientales (66)", "Aude (11)", 30919],
+            ["Pyrénées-Orientales (66)", "Ariège (9)", 5909],
+            ["Pyrénées-Orientales (66)", "Gers (32)", 48816],
+            ["Pyrénées-Orientales (66)", "Tarn (81)", 82169],
+            ["Pyrénées-Orientales (66)", "Tarn-et-Garonne (82)", 63496],
+            ["Pyrénées-Orientales (66)", "Lozère (48)", 29261],
+            ["Gard (30)", "Pyrénées-Orientales (66)", 350230],
+            ["Gard (30)", "Hérault (34)", 179721],
+            ["Gard (30)", "Haute-Garonne (31)", 234222],
+            ["Gard (30)", "Aveyron (12)", 17954],
+            ["Gard (30)", "Hautes-Pyrénées (65)", 66174],
+            ["Gard (30)", "Lot (46)", 44731],
+            ["Gard (30)", "Aude (11)", 162036],
+            ["Gard (30)", "Ariège (9)", 62245],
+            ["Gard (30)", "Gers (32)", 51765],
+            ["Gard (30)", "Tarn (81)", 73419],
+            ["Gard (30)", "Tarn-et-Garonne (82)", 34883],
+            ["Gard (30)", "Lozère (48)", 28345],
+            ["Tarn-et-Garonne (82)", "Pyrénées-Orientales (66)", 210392],
+            ["Tarn-et-Garonne (82)", "Hérault (34)", 209785],
+            ["Tarn-et-Garonne (82)", "Haute-Garonne (31)", 63317],
+            ["Tarn-et-Garonne (82)", "Gard (30)", 40023],
+            ["Tarn-et-Garonne (82)", "Aveyron (12)", 3822],
+            ["Tarn-et-Garonne (82)", "Hautes-Pyrénées (65)", 117758],
+            ["Tarn-et-Garonne (82)", "Lot (46)", 11972],
+            ["Tarn-et-Garonne (82)", "Aude (11)", 125668],
+            ["Tarn-et-Garonne (82)", "Ariège (9)", 84799],
+            ["Tarn-et-Garonne (82)", "Gers (32)", 6865],
+            ["Tarn-et-Garonne (82)", "Tarn (81)", 9635],
+            ["Tarn-et-Garonne (82)", "Lozère (48)", 14140],
+            ["Tarn (81)", "Pyrénées-Orientales (66)", 367266],
+            ["Tarn (81)", "Hérault (34)", 47929],
+            ["Tarn (81)", "Haute-Garonne (31)", 89997],
+            ["Tarn (81)", "Gard (30)", 74125],
+            ["Tarn (81)", "Aveyron (12)", 26946],
+            ["Tarn (81)", "Hautes-Pyrénées (65)", 123994],
+            ["Tarn (81)", "Lot (46)", 7418],
+            ["Tarn (81)", "Aude (11)", 14337],
+            ["Tarn (81)", "Ariège (9)", 6424],
+            ["Tarn (81)", "Gers (32)", 55346],
+            ["Tarn (81)", "Tarn-et-Garonne (82)", 15399],
+            ["Tarn (81)", "Lozère (48)", 33357],
+            ["Aveyron (12)", "Pyrénées-Orientales (66)", 152363],
+            ["Aveyron (12)", "Hérault (34)", 47577],
+            ["Aveyron (12)", "Haute-Garonne (31)", 288769],
+            ["Aveyron (12)", "Gard (30)", 7364],
+            ["Aveyron (12)", "Hautes-Pyrénées (65)", 69967],
+            ["Aveyron (12)", "Lot (46)", 17347],
+            ["Aveyron (12)", "Aude (11)", 86854],
+            ["Aveyron (12)", "Ariège (9)", 52737],
+            ["Aveyron (12)", "Gers (32)", 42906],
+            ["Aveyron (12)", "Tarn (81)", 15184],
+            ["Aveyron (12)", "Tarn-et-Garonne (82)", 3906],
+            ["Aveyron (12)", "Lozère (48)", 7315],
+            ["Lot (46)", "Pyrénées-Orientales (66)", 110732],
+            ["Lot (46)", "Hérault (34)", 132817],
+            ["Lot (46)", "Haute-Garonne (31)", 238722],
+            ["Lot (46)", "Gard (30)", 26203],
+            ["Lot (46)", "Aveyron (12)", 17555],
+            ["Lot (46)", "Hautes-Pyrénées (65)", 47368],
+            ["Lot (46)", "Aude (11)", 66643],
+            ["Lot (46)", "Ariège (9)", 32792],
+            ["Lot (46)", "Gers (32)", 28575],
+            ["Lot (46)", "Tarn (81)", 42472],
+            ["Lot (46)", "Tarn-et-Garonne (82)", 9597],
+            ["Lot (46)", "Lozère (48)", 13287],
+            ["Aude (11)", "Pyrénées-Orientales (66)", 42548],
+            ["Aude (11)", "Hérault (34)", 58934],
+            ["Aude (11)", "Haute-Garonne (31)", 54875],
+            ["Aude (11)", "Gard (30)", 98513],
+            ["Aude (11)", "Aveyron (12)", 71618],
+            ["Aude (11)", "Hautes-Pyrénées (65)", 62277],
+            ["Aude (11)", "Lot (46)", 43020],
+            ["Aude (11)", "Ariège (9)", 18126],
+            ["Aude (11)", "Gers (32)", 39842],
+            ["Aude (11)", "Tarn (81)", 7901],
+            ["Aude (11)", "Tarn-et-Garonne (82)", 55580],
+            ["Aude (11)", "Lozère (48)", 28204],
+            ["Hautes-Pyrénées (65)", "Pyrénées-Orientales (66)", 107413],
+            ["Hautes-Pyrénées (65)", "Hérault (34)", 121959],
+            ["Hautes-Pyrénées (65)", "Haute-Garonne (31)", 48497],
+            ["Hautes-Pyrénées (65)", "Gard (30)", 30547],
+            ["Hautes-Pyrénées (65)", "Aveyron (12)", 36193],
+            ["Hautes-Pyrénées (65)", "Lot (46)", 29117],
+            ["Hautes-Pyrénées (65)", "Aude (11)", 58581],
+            ["Hautes-Pyrénées (65)", "Ariège (9)", 2080],
+            ["Hautes-Pyrénées (65)", "Gers (32)", 17368],
+            ["Hautes-Pyrénées (65)", "Tarn (81)", 36049],
+            ["Hautes-Pyrénées (65)", "Tarn-et-Garonne (82)", 33057],
+            ["Hautes-Pyrénées (65)", "Lozère (48)", 6146],
+            ["Gers (32)", "Pyrénées-Orientales (66)", 100302],
+            ["Gers (32)", "Hérault (34)", 105069],
+            ["Gers (32)", "Haute-Garonne (31)", 43719],
+            ["Gers (32)", "Gard (30)", 29642],
+            ["Gers (32)", "Aveyron (12)", 37476],
+            ["Gers (32)", "Hautes-Pyrénées (65)", 15600],
+            ["Gers (32)", "Lot (46)", 32693],
+            ["Gers (32)", "Aude (11)", 58439],
+            ["Gers (32)", "Ariège (9)", 44197],
+            ["Gers (32)", "Tarn (81)", 34260],
+            ["Gers (32)", "Tarn-et-Garonne (82)", 5501],
+            ["Gers (32)", "Lozère (48)", 11844],
+            ["Ariège (09)", "Pyrénées-Orientales (66)", 12775],
+            ["Ariège (09)", "Hérault (34)", 128610],
+            ["Ariège (09)", "Haute-Garonne (31)", 52706],
+            ["Ariège (09)", "Gard (30)", 26510],
+            ["Ariège (09)", "Aveyron (12)", 33150],
+            ["Ariège (09)", "Hautes-Pyrénées (65)", 32105],
+            ["Ariège (09)", "Lot (46)", 24847],
+            ["Ariège (09)", "Aude (11)", 10029],
+            ["Ariège (09)", "Gers (32)", 30321],
+            ["Ariège (09)", "Tarn (81)", 32156],
+            ["Ariège (09)", "Tarn-et-Garonne (82)", 27137],
+            ["Ariège (09)", "Lozère (48)", 8909],
+            ["Lozère (48)", "Pyrénées-Orientales (66)", 33231],
+            ["Lozère (48)", "Hérault (34)", 195140],
+            ["Lozère (48)", "Haute-Garonne (31)", 29597],
+            ["Lozère (48)", "Gard (30)", 14439],
+            ["Lozère (48)", "Aveyron (12)", 5874],
+            ["Lozère (48)", "Hautes-Pyrénées (65)", 4789],
+            ["Lozère (48)", "Lot (46)", 6262],
+            ["Lozère (48)", "Aude (11)", 15131],
+            ["Lozère (48)", "Ariège (9)", 10396],
+            ["Lozère (48)", "Gers (32)", 8502],
+            ["Lozère (48)", "Tarn (81)", 10519],
+            ["Lozère (48)", "Tarn-et-Garonne (82)", 4100],
+            ]
+            ,
+        type: 'dependencywheel',
+        name: 'Dependency wheel series',
+        dataLabels: {
+            // color: '#333',
+            textPath: {
+                enabled: true,
+                attributes: {
+                    dy: 5
+                }
+            },
+            distance: 10
+        },
+        size: '95%'
+    }]
 
 });
