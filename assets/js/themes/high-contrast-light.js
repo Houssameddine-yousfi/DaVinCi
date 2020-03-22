@@ -14,7 +14,7 @@
  *
  * */
 'use strict';
-import Highcharts from '../parts/Globals.js';
+// import Highcharts from '../parts/Globals.js';
 Highcharts.theme = {
     colors: [
         '#5f98cf',

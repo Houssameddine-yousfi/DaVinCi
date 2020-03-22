@@ -17,16 +17,20 @@
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
     <!-- highstock js files from net-->
-    <script src="assets/js/themes/dark-unica.js"></script>
+    
     <script src="https://code.highcharts.com/stock/highstock.js"></script>
     <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/dependency-wheel.js"></script>
     <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
     <!-- highmaps js filesformthe net-->
     <script src="https://code.highcharts.com/maps/modules/map.js"></script>
     <script src="https://code.highcharts.com/maps/modules/data.js"></script>
     <script src="assets/data/departements.json"></script>
+
+    <!-- <script src="https://code.highcharts.com/modules/sankey.js"></script> -->
     
+    <script src="assets/js/themes/dark-unica.js"></script>
 </head>
 
 <body>
@@ -79,10 +83,14 @@
             <div class="grid-2nd-row-container">
                 <section class="bot-left">
                     <figure class="highcharts-figure">
-                        <div id="pie_chart_total"></div>
+                        <div id="heat_map"></div>
                     </figure>
                 </section>
-                <section class="bot-mid">bot-mid</section>
+                <section class="bot-mid">
+                    <figure class="highcharts-figure">
+                        <div id="dependancy"></div>
+                    </figure>
+                </section>
                 <section class="bot-right">bot-right</section>
             </div>
         </div>

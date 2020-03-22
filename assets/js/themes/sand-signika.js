@@ -11,7 +11,7 @@
  * */
 'use strict';
 /* global document */
-import Highcharts from '../parts/Globals.js';
+// import Highcharts from '../parts/Globals.js';
 // Load the fonts
 Highcharts.createElement('link', {
     href: 'https://fonts.googleapis.com/css?family=Signika:400,700',
