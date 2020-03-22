@@ -118,6 +118,9 @@ a:focus{
     grid-area: page2-right;
     text-align: center;
 }
+.about{
+    margin-left: auto;
+}
 .txt{
     padding: 10px;
     font-family: 'Roboto', sans-serif;
