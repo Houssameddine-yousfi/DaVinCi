@@ -85,6 +85,85 @@ Highcharts.chart('pie_chart_total', {
     }]
 });
 
+Highcharts.chart('pareto', {
+    chart: {
+        height: document.getElementsByClassName("bot-left")[0].offsetHeight,
+        renderTo: 'container',
+        type: 'column'
+    },
+    title: {
+        text: 'Capacité des departements'
+    },
+    tooltip: {
+        shared: true
+    },
+    xAxis: {
+        categories: [
+            "Hérault",
+						"Pyrénées-Orientales",
+            "Gard",
+            "Hautes-Pyrénées",
+            "Aude",
+            "Aveyron",
+            "Lot",
+            "Haute-Garonne",
+            "Gers",
+            "Lozère",
+            "Tarn",
+            "Ariège",
+            "Tarn-et-Garonne",
+        ],
+        crosshair: true
+    },
+    yAxis: [{
+        title: {
+            text: ''
+        }
+    }, {
+        title: {
+            text: ''
+        },
+        minPadding: 0,
+        maxPadding: 0,
+        max: 100,
+        min: 0,
+        opposite: true,
+        labels: {
+            format: "{value}%"
+        }
+    }],
+    series: [{
+        type: 'pareto',
+        name: 'Pareto',
+        yAxis: 1,
+        zIndex: 10,
+        baseSeries: 1,
+        tooltip: {
+            valueDecimals: 2,
+            valueSuffix: '%'
+        }
+    }, {
+        name: 'Capacité',
+        type: 'column',
+        zIndex: 2,
+        data: [
+              216870,
+              185277,
+              97793,
+              84641,
+              75753,
+              64952,
+              60279,
+              48332,
+              29918,
+              26512,
+              23835,
+              10634,
+              8947
+              ]
+    }]
+});
+
 
 var seriesOptions = [],
     seriesCounter = 0,
@@ -329,7 +408,7 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
     Highcharts.mapChart('map_france', {
        
         chart: {
-            height: document.getElementsByClassName("page2__right")[0].offsetHeight,
+            height: document.getElementsByClassName("page2__bot")[0].offsetHeight,
 
             map: 'countries/us/us-all',
             borderWidth: 1
@@ -1271,4 +1350,96 @@ Highcharts.chart('dependancy', {
         size: '95%'
     }]
 
+});
+
+Highcharts.chart('stacked', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Motife de visite'
+    },
+    xAxis: {
+        categories:[
+"Tarn-et-Garonne",
+"Tarn",
+"Pyrénées-Orientales",
+"Hautes-Pyrénées",
+"Lozère",
+"Lot",
+"Hérault",
+"Gers",
+"Haute-Garonne",
+"Gard",
+"Aveyron",
+"Aude",
+"Ariège"
+]
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total des nuitées'
+        }
+    },
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+        shared: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+    series: [{
+name: "Pas en vacances",
+data: [
+1313531,
+1709878,
+7618407,
+2969571,
+1073286,
+1994538,
+13455181,
+1360928,
+7226103,
+5183552,
+2269507,
+3206051,
+1243181
+]},
+{
+name: "En vacances",
+data: [
+1510919,
+2152957,
+12444046,
+4132282,
+1578371,
+3199211,
+17284161,
+1775795,
+6229903,
+6558852,
+3310517,
+4996622,
+1965381
+]},
+{
+name: "Non renseigné",
+data: [
+3205220,
+2474624,
+11735994,
+3861117,
+867609,
+2685832,
+19026468,
+2559819,
+15156733,
+9638117,
+2364697,
+7948030,
+1466914
+]}]
 });

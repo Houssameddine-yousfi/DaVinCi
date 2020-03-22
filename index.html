@@ -19,6 +19,7 @@
     <!-- highstock js files from net-->
     
     <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/modules/pareto.js"></script>
     <script src="https://code.highcharts.com/modules/sankey.js"></script>
     <script src="https://code.highcharts.com/modules/dependency-wheel.js"></script>
     <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
@@ -53,7 +54,10 @@
                         <div id="pie_chart_total"></div>
                     </figure>
                 </section>
-                <section class="bot-mid">bot-mid</section>
+                <section class="bot-mid">
+                    <figure class="highcharts-figure">
+                    <div id="pareto"></div>
+                </figure></section>
             </div>
         </div>
         <div class="page" id="page2">
@@ -63,11 +67,15 @@
                 </section>
                 <section class="page2__bot">
                     <figure class="highcharts-figure">
-                        <div id="sankey"></div>
+                        <div id="dependancy"></div>
                     </figure>
                 </section>
                 <div class="page2__left">left</div>
-                <div class="page2__right">right</div>
+                <div class="page2__right">
+                    <figure class="highcharts-figure">
+                        <div id="sankey"></div>
+                    </figure>
+                </div>
             </div>
         </div>
         <div class="page" id="page3">
@@ -85,7 +93,7 @@
                 </section>
                 <section class="bot-mid">
                     <figure class="highcharts-figure">
-                        <div id="dependancy"></div>
+                        <div id="stacked"></div>
                     </figure>
                 </section>
             </div>
