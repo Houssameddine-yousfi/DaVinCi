@@ -411,7 +411,7 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
             height: document.getElementsByClassName("page2__right")[0].offsetHeight,
 
             map: 'countries/us/us-all',
-            borderWidth: 1
+            // borderWidth: 1
         },
 
         title: {
