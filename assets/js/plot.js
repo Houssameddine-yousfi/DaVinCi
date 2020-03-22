@@ -100,7 +100,7 @@ Highcharts.chart('pareto', {
     xAxis: {
         categories: [
             "Hérault",
-						"Pyrénées-Orientales",
+			"Pyrénées-Orientales",
             "Gard",
             "Hautes-Pyrénées",
             "Aude",
@@ -408,7 +408,7 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
     Highcharts.mapChart('map_france', {
        
         chart: {
-            height: document.getElementsByClassName("page2__bot")[0].offsetHeight,
+            height: document.getElementsByClassName("page2__right")[0].offsetHeight,
 
             map: 'countries/us/us-all',
             borderWidth: 1
