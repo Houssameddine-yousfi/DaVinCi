@@ -7,7 +7,7 @@ Highcharts.chart('pie_chart_total', {
         height: document.getElementsByClassName("bot-left")[0].offsetHeight
     },
     title: {
-        text: 'Part de marché du tourisme en 2018'
+        text: 'Part de marché de chaque département sur l\'année 2018'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -181,7 +181,7 @@ function createChart() {
             height: document.getElementsByClassName("top-left")[0].offsetHeight
         },
         title: {
-            text: 'Nombre de nuitées par jour pour chaque departement'
+            text: 'Nombre de nuitées par departement'
         },
         rangeSelector: {
             selected: 4
@@ -1025,7 +1025,7 @@ Highcharts.chart('heat_map', {
 
 
     title: {
-        text: 'L\'effet du météo sur le nombre de nuitées'
+        text: 'L\'effet du météo'
     },
 
     xAxis: {
@@ -1060,7 +1060,7 @@ Highcharts.chart('heat_map', {
         align: 'right',
         layout: 'vertical',
         margin: 0,
-        verticalAlign: 'top',
+        verticalAlign: 'bottom',
         backgroundColor: 'rgba(0,0,0,0)',
         //y: 25,
         //symbolHeight: 280
