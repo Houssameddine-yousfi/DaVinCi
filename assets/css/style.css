@@ -2,7 +2,7 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    background-color: #616161;
+    background-color: #1f1818;
 }
 
 .pages{
@@ -12,7 +12,7 @@ html {
     overflow: hidden;
 }
 .page{
-    transition: all 300ms ease-out;
+    transition: transform 200ms ease-out;
 }
 .nav-bar{
     display: flex;
@@ -21,9 +21,10 @@ html {
     font-size: 15px;
     height: 28px;
     width: 100vw;
-    background-color: #383838;
+    background-color: #313133;
     list-style-type: none;
     text-transform: capitalize;
+    margin-bottom: 5px;
 }
 .nav-link{
     padding-left: 5px;
@@ -34,7 +35,7 @@ html {
 }
 
 a:-webkit-any-link {
-    color: #6a737c;
+    color: #fff;
     cursor: pointer;
     text-decoration: none;
     outline: none;
@@ -60,15 +61,16 @@ a:focus{
     outline: none;
 }
 .grid-container{
-    width: 99.9vw;
-    height: 95.9vh;
+    width: 99.1vw;
+    height: 94.9vh;
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "top-left  top-left  top-right"
     "bot-left  bot-mid    top-right";
-    grid-gap: 3px;
+    grid-gap: 5px;
+    margin-left: 5px;
 }
 .top-left{
     grid-area: top-left;
@@ -76,7 +78,6 @@ a:focus{
 }
 .top-right{
     grid-area: top-right;
-    background-color: #363030;
 }
 .bot-left{
     grid-area: bot-left;
@@ -86,15 +87,16 @@ a:focus{
 }
 
 .page2__grid-container{
-    width: 100vw;
-    height: 95.9vh;
+    width: 98.9vw;
+    height: 94.9vh;
     display: grid ;
-    grid-template-columns: 1fr 1fr 1.3fr;
+    grid-template-columns: 1.3fr 1fr 1.3fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "page2-left  page2-top   page2-right"
     "page2-left  page2-bot page2-right";
-    grid-gap: 3px;
+    grid-gap: 5px;
+    margin-left: 11px;
 }
 
 .page2__top{
