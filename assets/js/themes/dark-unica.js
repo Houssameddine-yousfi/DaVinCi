@@ -30,7 +30,7 @@ Highcharts.theme = {
             ]
         },
         style: {
-            fontFamily: '\'Unica One\', sans-serif'
+            font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
         },
         plotBorderColor: '#606063'
     },
