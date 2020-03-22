@@ -168,7 +168,7 @@ Highcharts.chart('sankey', {
         height: document.getElementsByClassName("page2__right")[0].offsetHeight
     },
     title: {
-        text: 'Highcharts Sankey Diagram'
+        text: 'Flux de tourisme International vers la région de l\'Occitanie'
     },
     accessibility: {
         point: {
@@ -336,7 +336,7 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
         },
 
         title: {
-            text: 'US population density (/km²)'
+            text: 'Département d\'origine des touristes français'
         },
 
         exporting: {
@@ -364,12 +364,12 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
         colorAxis: {
             min: 100000,
             max: 5000000,
-            type: 'logarithmic',
+            //type: 'logarithmic',
             minColor: 'rgb(255,80,80)',
             maxColor: 'rgba(0,0,0,0)',
             stops: [
                 [0, 'rgba(255,80,80,1)'],
-                [0.5, 'rgba(150,40,40,.8)'],
+                [0.2, 'rgba(150,40,40,.8)'],
                 [1, 'rgba(20,10,10,.2)']
             ]
         },
@@ -387,7 +387,7 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
             },
             name: 'Nombre de nuitées',
             tooltip: {
-                pointFormat: '{point.name}: {point.value} nuitées'
+                pointFormat: 'Département {point.code}: {point.value} nuitées'
             }
         }]
     });
@@ -402,15 +402,15 @@ Highcharts.chart('scatter_chart', {
         zoomType: 'xy'
     },
     title: {
-        text: 'Height Versus Weight of 507 Individuals by Gender'
+        text: 'L\'effet de la température sur le nombre de nuitées'
     },
     subtitle: {
-        text: 'Source: Heinz  2003'
+        text: 'Le nombre des nuitées est normalisée pour isoler l\'effet de la températureource: Heinz  2003'
     },
     xAxis: {
         title: {
             enabled: true,
-            text: 'temperature (°C)'
+            text: 'Temperature (°C)'
         },
         // startOnTick: true,
         // endOnTick: true,
@@ -418,7 +418,7 @@ Highcharts.chart('scatter_chart', {
     },
     yAxis: {
         title: {
-            text: 'Weight (kg)'
+            text: 'Nombre de nuitées'
         }
     },
     legend: {
@@ -451,13 +451,13 @@ Highcharts.chart('scatter_chart', {
             },
             tooltip: {
                 headerFormat: '<b>{series.name}</b><br>',
-                pointFormat: '{point.x} °C, {point.y} °%'
+                pointFormat: '{point.x} °C, {point.y}'
             }
         }
     },
     series: [{
         type: 'line',
-        name: 'Regression Line',
+        name: 'Ligne de régression',
         data: [[-7, 0.39815211442], [36, 2.47511788604]],
         marker: {
             enabled: false
@@ -946,7 +946,7 @@ Highcharts.chart('heat_map', {
 
 
     title: {
-        text: 'Sales per employee per weekday'
+        text: 'L\'effet du météo sur le nombre de nuitées'
     },
 
     xAxis: {
@@ -989,13 +989,13 @@ Highcharts.chart('heat_map', {
 
     tooltip: {
         formatter: function () {
-            return '<b>' + getPointCategoryName(this.point, 'x') + '</b> sold <br><b>' +
-                this.point.value + '</b> items on <br><b>' + getPointCategoryName(this.point, 'y') + '</b>';
+            return '<b>' + getPointCategoryName(this.point, 'x') + '</b> à reçu <br><b>' +
+                Math.round(this.point.value * 100) + '</b>% nuité  quand le Météo est <br><b>' + getPointCategoryName(this.point, 'y') + '</b>';
         }
     },
 
     series: [{
-        name: 'Sales per employee',
+        name: 'Effet du meteo',
         borderWidth: 1,
         data: [
             [4, 0, -1.1968281589671304],
@@ -1086,7 +1086,7 @@ Highcharts.chart('dependancy', {
         height: document.getElementsByClassName("bot-left")[0].offsetHeight
     },
     title: {
-        text: 'Highcharts Dependency Wheel'
+        text: 'Flux de tourisme intra-Occitanie'
     },
 
     accessibility: {
@@ -1257,7 +1257,7 @@ Highcharts.chart('dependancy', {
             ]
             ,
         type: 'dependencywheel',
-        name: 'Dependency wheel series',
+        name: 'Flux de tourisme intra-Occitanie',
         dataLabels: {
             // color: '#333',
             textPath: {
