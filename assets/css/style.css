@@ -121,6 +121,9 @@ a:focus{
 .about{
     margin-left: auto;
 }
+.about a{
+    opacity: .7;
+}
 .txt{
     padding: 10px;
     font-family: 'Roboto', sans-serif;
