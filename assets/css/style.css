@@ -118,3 +118,9 @@ a:focus{
     grid-area: page2-right;
     text-align: center;
 }
+
+.description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(155, 155, 155);
+}
