@@ -160,3 +160,14 @@ h2{
     padding-top: 0em;
     color: rgb(155, 155, 155);
 }
+
+.team{
+    opacity: 1;
+    float: left;
+    transition: opacity 150ms ease-in;
+    
+}
+
+.team:hover{
+    opacity: .6;
+}
