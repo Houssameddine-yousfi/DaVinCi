@@ -3,6 +3,8 @@ const page2 = document.querySelector('.btnPage2');
 const page3 = document.querySelector('.btnPage3');
 const page = document.querySelectorAll('.page');
 const btns = document.querySelectorAll('.nav-link a')
+const about = document.querySelector('.about')
+
 
 
 page1.addEventListener('click', () =>{
@@ -32,3 +34,12 @@ function remove() {
         btn.classList.remove("active");
     });
 }
+
+about.addEventListener('click', () =>{
+    Swal.fire({
+        icon: 'info',
+        title: 'Information',
+        text: 'ceci est un text',
+        html: '<a href="https://www.linkedin.com/in/reda-mekhezzem/">Reda Mekhezzem</a>'
+      })
+});

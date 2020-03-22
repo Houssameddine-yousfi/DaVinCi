@@ -152,4 +152,5 @@ h2{
 .txt:nth-child(1){
     margin-top: 0em;
     padding-top: 0em;
+    color: rgb(155, 155, 155);
 }
