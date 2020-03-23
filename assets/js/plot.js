@@ -7,7 +7,7 @@ Highcharts.chart('pie_chart_total', {
         height: document.getElementsByClassName("bot-left")[0].offsetHeight
     },
     title: {
-        text: 'Part de marché de chaque département sur l\'année 2018'
+        text: '2- Part de marché de chaque département sur l\'année 2018'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -92,7 +92,7 @@ Highcharts.chart('pareto', {
         type: 'column'
     },
     title: {
-        text: 'Capacité des departements'
+        text: '3- Capacité des departements'
     },
     tooltip: {
         shared: true
@@ -181,7 +181,7 @@ function createChart() {
             height: document.getElementsByClassName("top-left")[0].offsetHeight
         },
         title: {
-            text: 'Nombre de nuitées par departement'
+            text: '1- Nombre de nuitées par departement'
         },
         
         rangeSelector: {
@@ -266,7 +266,7 @@ Highcharts.chart('sankey', {
         height: document.getElementsByClassName("page2__right")[0].offsetHeight
     },
     title: {
-        text: 'Flux du tourisme International vers la région Occitanie'
+        text: '3- Flux du tourisme International vers la région Occitanie'
     },
     accessibility: {
         point: {
@@ -434,7 +434,7 @@ Highcharts.getJSON('assets/data/org_volume.json', function (data) {
         },
 
         title: {
-            text: 'Département d\'origine des touristes français'
+            text: '1- Département d\'origine des touristes français'
         },
 
         exporting: {
@@ -500,7 +500,7 @@ Highcharts.chart('scatter_chart', {
         zoomType: 'xy'
     },
     title: {
-        text: 'L\'effet de la température sur le nombre de nuitées'
+        text: '1- L\'effet de la température sur le nombre de nuitées'
     },
     subtitle: {
         text: 'Le nombre des nuitées est normalisé pour isoler l\'effet de la température'
@@ -1044,7 +1044,7 @@ Highcharts.chart('heat_map', {
 
 
     title: {
-        text: 'L\'effet du météo'
+        text: '2- L\'effet du météo'
     },
 
     xAxis: {
@@ -1184,7 +1184,7 @@ Highcharts.chart('dependancy', {
         height: document.getElementsByClassName("bot-left")[0].offsetHeight
     },
     title: {
-        text: 'Flux du tourisme intra-Occitanie'
+        text: '2- Flux du tourisme intra-Occitanie'
     },
 
     accessibility: {
@@ -1355,7 +1355,7 @@ Highcharts.chart('dependancy', {
             ]
             ,
         type: 'dependencywheel',
-        name: 'Flux de tourisme intra-Occitanie',
+        name: '2- Flux de tourisme intra-Occitanie',
         dataLabels: {
             // color: '#333',
             textPath: {
@@ -1376,7 +1376,7 @@ Highcharts.chart('stacked', {
         type: 'column'
     },
     title: {
-        text: 'Motifs de visite'
+        text: '3- Motifs de visite'
     },
     xAxis: {
         categories:[
