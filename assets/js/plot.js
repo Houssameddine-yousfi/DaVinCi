@@ -266,7 +266,7 @@ Highcharts.chart('sankey', {
         height: document.getElementsByClassName("page2__right")[0].offsetHeight
     },
     title: {
-        text: 'Flux de tourisme International vers la région de l\'Occitanie'
+        text: 'Flux du tourisme International vers la région Occitanie'
     },
     accessibility: {
         point: {
@@ -503,7 +503,7 @@ Highcharts.chart('scatter_chart', {
         text: 'L\'effet de la température sur le nombre de nuitées'
     },
     subtitle: {
-        text: 'Le nombre des nuitées est normalisée pour isoler l\'effet de la températureource: Heinz  2003'
+        text: 'Le nombre des nuitées est normalisé pour isoler l\'effet de la température'
     },
     xAxis: {
         title: {
@@ -1184,7 +1184,7 @@ Highcharts.chart('dependancy', {
         height: document.getElementsByClassName("bot-left")[0].offsetHeight
     },
     title: {
-        text: 'Flux de tourisme intra-Occitanie'
+        text: 'Flux du tourisme intra-Occitanie'
     },
 
     accessibility: {
